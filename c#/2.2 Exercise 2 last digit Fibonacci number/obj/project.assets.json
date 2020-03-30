@@ -7289,11 +7289,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "e:\\ji\\c#\\2.2 Exercise 1 small Fibonacci number\\c#.csproj",
+      "projectUniqueName": "E:\\ji\\c#\\2.2 Exercise 2 last digit Fibonacci number\\c#.csproj",
       "projectName": "c#",
-      "projectPath": "e:\\ji\\c#\\2.2 Exercise 1 small Fibonacci number\\c#.csproj",
+      "projectPath": "E:\\ji\\c#\\2.2 Exercise 2 last digit Fibonacci number\\c#.csproj",
       "packagesPath": "C:\\Users\\gstrong\\.nuget\\packages\\",
-      "outputPath": "e:\\ji\\c#\\2.2 Exercise 1 small Fibonacci number\\obj\\",
+      "outputPath": "E:\\ji\\c#\\2.2 Exercise 2 last digit Fibonacci number\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gstrong\\AppData\\Roaming\\NuGet\\NuGet.Config"
