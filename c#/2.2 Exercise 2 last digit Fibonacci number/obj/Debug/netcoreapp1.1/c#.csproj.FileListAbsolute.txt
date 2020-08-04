@@ -40,3 +40,12 @@ E:\ji\c#\2.2 Exercise 2 last digit Fibonacci number\obj\Debug\netcoreapp1.1\c#.A
 E:\ji\c#\2.2 Exercise 2 last digit Fibonacci number\obj\Debug\netcoreapp1.1\c#.dll
 E:\ji\c#\2.2 Exercise 2 last digit Fibonacci number\obj\Debug\netcoreapp1.1\c#.pdb
 E:\ji\c#\2.2 Exercise 2 last digit Fibonacci number\obj\Debug\netcoreapp1.1\c#.genruntimeconfig.cache
+C:\Users\shpak\Desktop\mine\github\ji\c#\2.2 Exercise 2 last digit Fibonacci number\bin\Debug\netcoreapp1.1\c#.deps.json
+C:\Users\shpak\Desktop\mine\github\ji\c#\2.2 Exercise 2 last digit Fibonacci number\bin\Debug\netcoreapp1.1\c#.runtimeconfig.json
+C:\Users\shpak\Desktop\mine\github\ji\c#\2.2 Exercise 2 last digit Fibonacci number\bin\Debug\netcoreapp1.1\c#.runtimeconfig.dev.json
+C:\Users\shpak\Desktop\mine\github\ji\c#\2.2 Exercise 2 last digit Fibonacci number\bin\Debug\netcoreapp1.1\c#.dll
+C:\Users\shpak\Desktop\mine\github\ji\c#\2.2 Exercise 2 last digit Fibonacci number\bin\Debug\netcoreapp1.1\c#.pdb
+C:\Users\shpak\Desktop\mine\github\ji\c#\2.2 Exercise 2 last digit Fibonacci number\obj\Debug\netcoreapp1.1\c#.csproj.CoreCompileInputs.cache
+C:\Users\shpak\Desktop\mine\github\ji\c#\2.2 Exercise 2 last digit Fibonacci number\obj\Debug\netcoreapp1.1\c#.AssemblyInfo.cs
+C:\Users\shpak\Desktop\mine\github\ji\c#\2.2 Exercise 2 last digit Fibonacci number\obj\Debug\netcoreapp1.1\c#.dll
+C:\Users\shpak\Desktop\mine\github\ji\c#\2.2 Exercise 2 last digit Fibonacci number\obj\Debug\netcoreapp1.1\c#.pdb
