@@ -17,5 +17,5 @@ else:
 
 if S == 109:
     S = 0
-    
+
 print(str(S))
