@@ -4,3 +4,11 @@
 # вхождение буквы h, а также все символы, находящиеся 
 # между ними.
 
+s = input()
+
+h1Pos = s.find('h')
+hLPos = s.rfind('h')
+
+sNew = s[0:h1Pos] + s[hLPos + 1:len(s)]
+
+print(sNew)
