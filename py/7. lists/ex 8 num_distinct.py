@@ -4,4 +4,11 @@
 
 a_list = [int(i) for i in input().split()]
 
-count_all = 0
+count_distinct = 0
+distinct_el = []
+
+for i in a_list:
+    if i not in distinct_el:
+        distinct_el.append(i)
+
+print(len(distinct_el))
