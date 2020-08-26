@@ -10,3 +10,14 @@
 # Выведите номер, под которым Петя должен встать в 
 # строй. Если в строю есть люди с одинаковым ростом, 
 # таким же, как у Пети, то он должен встать после них.
+
+all_growth_list = [int(i) for i in input().split()]
+petya_growth = int(input())
+
+if petya_growth > all_growth_list[0]:
+    print(1)
+else:
+    for i in range(1, len(all_growth_list) + 1):
+        if all_growth_list[-i] >= petya_growth:
+            print(len(all_growth_list) - i + 2)
+            break
