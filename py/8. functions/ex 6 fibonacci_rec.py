@@ -4,3 +4,14 @@
 # число Фибоначчи. В этой задаче нельзя использовать 
 # циклы — используйте рекурсию.
 
+def fib(n):
+    if n == 0:
+        fn = 0
+    elif n == 1:
+        fn = 1
+    else:
+        fn = fib(n - 1) + fib(n - 2)
+    return fn
+
+n = int(input())
+print(fib(n))

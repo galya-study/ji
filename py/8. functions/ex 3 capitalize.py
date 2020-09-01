@@ -13,10 +13,14 @@
 # chr(), которая по коду символа возвращает сам символ. 
 # Например, ord('a') == 97, chr(97) == 'a'.
 
-def capitalize(s):
-    return 0
-    #тут будет функция
+def capit(s2):
+    s_list = s2.split()
 
+    for i in range(len(s_list)):
+        s_list[i] = s_list[i].capitalize()
 
-s = input()
-print(capitalize())
+    s2 = ' '.join(s_list)
+    return s2
+
+s1 = input()
+print(capit(s1))
