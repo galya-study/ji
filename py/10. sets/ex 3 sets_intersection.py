@@ -5,6 +5,5 @@
 # Примечание. И даже эту задачу на Питоне можно решить в 
 # одну строчку.
 
-
-print(' '.join(sorted(set(input().split()) & (set(input().split())))))
-
+# в одну строку, но ничо непонятно, прекрасный код -_-
+print(' '.join([str(i) for i in sorted([int(i) for i in set(input().split()) & set(input().split())])]))
