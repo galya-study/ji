@@ -16,6 +16,7 @@
 # Вы должны вывести через пробел, в порядке возрастания, 
 # все числа, которые мог задумать Август.
 
+# это какой-то бред, а не задача -_-
 n = int(input())
 
 yes_set = set()
@@ -24,7 +25,12 @@ no_set = set()
 num = input()
 while num != 'HELP':
     if input() == 'YES':
-        yes_set.update([str(i) for i in num.split()])
+        yes_set_temp = set()
+        yes_set_temp.update([str(i) for i in num.split()])
+        if len(yes_set) == 0:
+            yes_set = yes_set_temp
+        else:
+            yes_set = yes_set_temp & yes_set
     else:
         no_set.update([str(i) for i in num.split()])
     num = input()
