@@ -19,10 +19,21 @@
 # возвращать OK если над файлом выполняется допустимая 
 # операция, или же Access denied, если операция недопустима.
 
-op = {'write': 'W', 'read': 'R', 'execute': 'X'}
-doc = dict()
+ops = {'write': 'W', 'read': 'R', 'execute': 'X'}
+docs = dict()
 count_doc = int(input())
 for i in range(count_doc):
-    value = []
-    key, value = [i for i in input().split()]
-    doc[key] = value
+    str_mas = []
+    str_mas = [str(i) for i in input().split()]
+    for i in range(1, len(str_mas)):
+        key = str_mas[0] + str_mas[i]
+        docs[key] = 'OK'
+
+count_ops = int(input())
+for i in range(count_ops):
+    act, file = [str(i) for i in input().split()]
+    op = file + ops[act]
+    if op in docs:
+        print(docs[op])
+    else:
+        print('Access denied')
