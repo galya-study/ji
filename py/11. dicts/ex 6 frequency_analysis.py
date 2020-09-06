@@ -15,3 +15,24 @@
 # сортировать список кортежей, при этом кортежи 
 # сравниваются по первому элементу, а если они равны — 
 # то по второму. Это почти то, что требуется в задаче.
+
+count_str = int(input())
+words_dict = dict()
+
+for i in range(count_str):
+    string = [str(i) for i in input().split()]
+    for j in string:
+        if j in words_dict:
+            words_dict[j] = words_dict[j] + 1
+        else:
+            words_dict[j] = 1
+
+words_list = list()
+
+for i in words_dict.keys():
+    words_list.append([words_dict[i], i])
+
+words_list.sort(reverse=True)
+
+for i in words_list:
+    print(i[1])
