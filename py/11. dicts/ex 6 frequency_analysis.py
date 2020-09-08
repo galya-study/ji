@@ -27,12 +27,5 @@ for i in range(count_str):
         else:
             words_dict[j] = 1
 
-words_list = list()
-
-for i in words_dict.keys():
-    words_list.append([words_dict[i], i])
-
-words_list.sort(reverse=True)
-
-for i in words_list:
-    print(i[1])
+for i in sorted(words_dict.items(), key=lambda x:(-x[1],x[0])): 
+    print(i[0])
