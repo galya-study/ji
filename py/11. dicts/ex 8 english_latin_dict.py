@@ -36,3 +36,17 @@
 # порядке и т.д. Внутри перевода английские слова должны 
 # быть также отсортированы лексикографически.
 
+dict_dict = dict()
+
+for i in range(int(input())):
+    dict_mas = [str(i) for i in input().split()]
+    for j in range(2, len(dict_mas)):
+        key = dict_mas[j].replace(',', '')
+        if key not in dict_dict.keys():
+            dict_dict[key] = dict_mas[0]
+        else:
+            dict_dict[key] = dict_dict[key] + ', ' + dict_mas[0]
+
+print(len(dict_dict.keys()))
+for i in sorted(dict_dict.keys()):
+    print(i, dict_dict[i], sep=' - ')
