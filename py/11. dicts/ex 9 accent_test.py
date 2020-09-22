@@ -1,3 +1,4 @@
+# Контрольная по ударениям
 # Учительница задала Пете домашнее задание — в заданном тексте 
 # расставить ударения в словах, после чего поручила Васе 
 # проверить это домашнее задание. Вася очень плохо знаком с 
@@ -38,16 +39,28 @@
 # 
 # Выведите количество ошибок в Петином тексте, которые найдет Вася.
 
-set_dict = set()
+set_dict_accent = set()
+set_dict_lower = set()
 for i in range(int(input())):
-    set_dict.add(str(input()))
+    s = str(input())
+    set_dict_accent.add(s)
+    set_dict_lower.add(s.lower())
 
 str_all = [str(i) for i in input().split()]
-str_check = dict()
 count = 0
 
 for i in str_all:
-    if i not in set_dict:
+    flag = 0
+    if i.lower() in set_dict_lower:
+        if i not in set_dict_accent:
+            flag += 2
+        else:
+            flag += 1
+    else:
+        for j in i:
+            if j in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
+                flag += 1
+    if flag != 1:
         count += 1
 
 print(count)
