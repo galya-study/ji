@@ -21,30 +21,18 @@
 # вопросы Беатрисы.
 
 n = int(input())
-
-yes_set = set()
-no_set = set()
-
-num = input()
-while num != 'HELP':
-    temp = set()
-    temp.update([str(i) for i in num.split()])
-    if len(temp) > n // 2:
+all_nums = set(range(1, n + 1))
+possible_nums = all_nums
+while True:
+    guess = input()
+    if guess == 'HELP':
+        break
+    guess = {int(x) for x in guess.split()}
+    if len(possible_nums & guess) > len(possible_nums) / 2:
         print('YES')
-        if len(yes_set) == 0:
-            yes_set.update([str(i) for i in num.split()])
-        else:
-            yes_set = temp & yes_set
-    elif len(temp) < n // 2:
+        possible_nums &= guess
+    else:
         print('NO')
-        no_set.update([str(i) for i in num.split()])
-    elif len(temp) == n // 2:
-        print('NO')
-        no_set.update([str(i) for i in num.split()])
-
-    num = input()
-
-res_set = yes_set - (yes_set & no_set)
-
-for i in res_set:
-    print(i, end=' ')
+        possible_nums &= all_nums - guess
+         
+print(' '.join([str(x) for x in sorted(possible_nums)]))

@@ -27,8 +27,7 @@ for i in range(int(input())-1):
 
 for j in range(int(input())):
     gen1, gen2 = [str(i) for i in input().split()]
-    out = 0
-
+    
     if search(gen1, gen2):
         print(2)
     elif search(gen2, gen1):
