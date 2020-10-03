@@ -10,21 +10,14 @@
 # 2, если второй является предком первого или 
 # 0, если ни один из них не является предком другого.
 
-def search1(g1, g2):
-    out_search = 0
-    if g2 in genealogy_dict.keys():
-        if genealogy_dict[g2] == g1:
-            return 1
-        else:
-            for i in genealogy_dict.keys():
-                if genealogy_dict[i] == g1:
-                    out_search = search1(i, g2)
-                    if out_search == 1:
-                        return 1
-                        break
-    if out_search == 0:
-        return 0
-
+def search(g1, g2):
+    if g1 == g2:
+        return True
+    while g1 in genealogy_dict:
+        g1 = genealogy_dict[g1]
+        if g1 == g2:
+            return True
+    return False
 
 genealogy_dict = dict()
 
@@ -36,14 +29,9 @@ for j in range(int(input())):
     gen1, gen2 = [str(i) for i in input().split()]
     out = 0
 
-    if gen2 in genealogy_dict.keys():
-        out = search1(gen1, gen2)
-    elif gen1 in genealogy_dict.keys() and out == 0:
-        out = search1(gen2, gen1)
-        if out == 1:
-            out = 2
+    if search(gen1, gen2):
+        print(2)
+    elif search(gen2, gen1):
+        print(1)
     else:
-        out = 0
-    
-    print(out)
-    
+        print(0)
