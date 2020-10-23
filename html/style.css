@@ -1,52 +1,51 @@
 body {
   padding: 0 30px;
-  font-size: 14px;
-  line-height: 22px;
-  font-family: "Georgia", serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Arial", sans-serif;
   color: #222222;
+
+  background: #ffffff url("img/bg-page.png") no-repeat top center;
 }
 
 h1 {
+  font-size: 36px;
+  line-height: normal;
+}
+
+h2 {
   font-size: 20px;
   line-height: normal;
 }
 
-aside {
-  margin: 20px 0;
-  color: #c4c4c4;
-}
-
-a[href] {
+a {
   color: #0099ef;
-  text-decoration-line: underline;
+  text-decoration: underline;
 }
 
-figure {
-  margin-left: 0;
-  margin-right: 0;
+.avatar {
+  border-radius: 50%;
 }
 
-figure img {
-  vertical-align: middle;
-  border: 8px solid rgb(202, 224, 248);
+nav {
+  margin-bottom: 30px;
+  padding: 20px;
+
+  background-color: #4470c4;
+  border: 5px solid #2d508f;
+
+  color: #ffffff;
 }
 
-figcaption {
-  width: 502px;
-  padding-bottom: 8px;
-  font-size: 12px;
-  letter-spacing: 0.02em;
-  font-style: italic;
-  text-align: center;
-  background-color: rgb(202, 224, 248);
+nav a {
+  color: #ffffff;
 }
 
-.pagination a {
-  display: inline-block;
-  margin-right: 30px;
-  margin-bottom: 15px;
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 
-.pagination {
-  text-align: center;
+footer {
+  margin-top: 30px;
 }
