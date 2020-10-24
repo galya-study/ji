@@ -27,7 +27,7 @@ a {
   border-radius: 50%;
 }
 
-nav {
+.blog-navigation {
   margin-bottom: 30px;
   padding: 20px;
 
@@ -37,13 +37,27 @@ nav {
   color: #ffffff;
 }
 
-nav a {
+.blog-navigation h2 {
+  margin-top: 0;
+}
+
+.blog-navigation ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.blog-navigation li {
+  margin-bottom: 5px;
+}
+
+.blog-navigation a {
   color: #ffffff;
 }
 
-ul {
-  list-style: none;
-  padding-left: 0;
+.skills dd {
+  background-color: #e8e8e8;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 footer {
