@@ -55,9 +55,21 @@ a {
 }
 
 .skills dd {
-  background-color: #e8e8e8;
   margin: 0;
   margin-bottom: 10px;
+
+  background-color: #e8e8e8;
+}
+
+.skills-level {
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #4470c4;
+}
+
+.skills-level-ok {
+  background-color: #47bb52;
 }
 
 footer {
