@@ -1,6 +1,6 @@
 body {
   padding: 0 30px;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 26px;
   font-family: "Arial", sans-serif;
   color: #222222;
@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 24px;
   line-height: normal;
 }
 
@@ -23,6 +23,10 @@ a {
   text-decoration: underline;
 }
 
+.page-title {
+  font-size: 2.5em;
+}
+
 .avatar {
   border-radius: 50%;
 }
@@ -31,10 +35,10 @@ a {
   margin-bottom: 30px;
   padding: 20px;
 
+  color: #ffffff;
+
   background-color: #4470c4;
   border: 5px solid #2d508f;
-
-  color: #ffffff;
 }
 
 .blog-navigation h2 {
@@ -42,8 +46,8 @@ a {
 }
 
 .blog-navigation ul {
-  list-style: none;
   padding-left: 0;
+  list-style: none;
 }
 
 .blog-navigation li {
