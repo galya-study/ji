@@ -10,6 +10,7 @@ body {
 
 h1 {
   font-size: 24px;
+  line-height: normal;
 }
 
 h2 {
@@ -23,9 +24,15 @@ a {
 }
 
 .page-title {
-  font-family: "Verdana", sans-serif;
+  font-weight: bold;
   font-size: 36px;
-  line-height: 120%;
+  line-height: 42px;
+  font-family: "Verdana", sans-serif;
+  text-align: center;
+}
+
+.avatar-container {
+  text-align: center;
 }
 
 .avatar {
@@ -38,7 +45,7 @@ a {
 
   color: #ffffff;
 
-  background-color: #4470c4;
+  background-color: rgba(68, 112, 196, 0.7);
   border: 5px solid #2d508f;
 }
 
@@ -77,6 +84,20 @@ a {
   background-color: #47bb52;
 }
 
+.partnership {
+  color: #ffffff;
+  background-color: #4a87fa;
+  background-image: url("img/bg-partnership.svg");
+}
+
 footer {
   margin-top: 30px;
+}
+
+del {
+  color: #ff4400;
+}
+
+ins {
+  color: rgb(105, 178, 83);
 }
