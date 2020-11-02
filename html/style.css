@@ -11,7 +11,6 @@ body {
 h1 {
   font-size: 24px;
   line-height: normal;
-  white-space: pre-wrap;
 }
 
 h2 {
@@ -24,12 +23,40 @@ a {
   text-decoration: underline;
 }
 
+del,
+ins {
+  text-decoration: none;
+}
+
 del {
   color: #ff4400;
 }
 
 ins {
   color: rgb(105, 178, 83);
+}
+
+pre,
+code {
+  font-family: "Courier New", "Courier", monospace;
+  color: #3632ad;
+  background-color: #fafaff;
+  border: 1px solid #c6c4f4;
+  border-radius: 4px;
+}
+
+pre {
+  padding: 5px;
+}
+
+code {
+  padding: 2px 5px;
+}
+
+pre code {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
 }
 
 .page-title {
@@ -106,12 +133,7 @@ ins {
 
 footer {
   margin-top: 30px;
-}
-
-.nowrap {
-  white-space: nowrap;
-}
-
-.like-pre {
-  white-space: pre;
+  color: #aaaaaa;
+  border-top: 1px solid #aaaaaa;
+  padding-top: 10px;
 }
