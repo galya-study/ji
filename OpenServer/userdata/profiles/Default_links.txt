@@ -1,0 +1,4 @@
+﻿"Домашняя страница";"Open Server";https://ospanel.io
+Руководство;"Open Server";https://ospanel.io/docs/
+"Форум Open Server";"Open Server";https://ospanel.io/forum/
+"Тюнинг SSD";"Фиксы и патчи";%realprogdir%\modules\system\ssd.bat
