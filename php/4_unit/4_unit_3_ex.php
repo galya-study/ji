@@ -9,7 +9,8 @@ $cities = array(
     'Сан-Антонио, шт. Техас' => ['TX' => 1327407],
     'Сан-Диего, шт. Калифорния' => ['CA' => 1307402],
     'Даллас, шт. Техас' => ['TX' => 1197816],
-    'Сан-Хосе, шт. Калифорния' => ['CA' => 945942]);
+    'Сан-Хосе, шт. Калифорния' => ['CA' => 945942],
+);
 
 $states = array(
     'NY' => 'шт. Нью-Йорк',
@@ -17,7 +18,8 @@ $states = array(
     'IX' => 'шт. Иллинойс',
     'TX' => 'шт. Техас',
     'PA' => 'шт. Пенсильвания',
-    'AZ' => 'шт. Аризона');
+    'AZ' => 'шт. Аризона',
+);
 
 
 $state_populations = array();
@@ -26,21 +28,16 @@ $all = 0;
 
 print("<table>\n");
 print("<tr><td><b>Город</b></td><td><b>Население</b></td></tr>\n");
-foreach ($cities as $city => $arr)
-{
-    foreach ($arr as $state => $population)
-    {
+foreach ($cities as $city => $arr) {
+    foreach ($arr as $state => $population) {
         print("<tr><td>$city</td><td>$population</td></tr>\n"); 
         $all = $all + $population; 
         
-        if (array_key_exists($state, $states))
-        {
+        if (array_key_exists($state, $states)) {
             $state_populations[$state] = $state_populations[$state] + $population;
         }
-        else
-        {
+        else {
             $state_populations[$state] = $population;
-            
         }
     }   
 }
@@ -49,9 +46,8 @@ print("</table>");
 
 print("<table>\n");
 print("<tr><td><b>Штат</b></td><td><b>Население</b></td></tr>\n");
-foreach ($state_populations as $state => $population)
-{
+foreach ($state_populations as $state => $population) {
     print("<tr><td>$states[$state]</td><td>$population</td></tr>\n"); 
 }
+
 print("</table>");
-?>
