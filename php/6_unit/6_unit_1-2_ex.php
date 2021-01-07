@@ -1,4 +1,6 @@
 <?php
+namespace Food;
+
 class Ingredient
 {
     protected $name;
