@@ -8,7 +8,7 @@
   <body>
     <h1>Профиль</h1>
 
-    <form action="https://echo.htmlacademy.ru/courses" method="post">
+    <form action="https://echo.htmlacademy.ru/courses" method="post" enctype="multipart/form-data">
       <label>
         Ваш пол:
         <label>
@@ -38,16 +38,22 @@
       </label>
       <br>
       
-      <label>
+      <label for="tech">
         Знакомые технологии:
-        <input type="textarea">
-      HTML
-      CSS
-      JavaScript
-      Node.js
       </label>
-      Фото:
-      Сохранить
+        <br>
+      <select name="tech" id="tech" multiple>
+        <option value="html">HTML</option>
+        <option value="css" selected>CSS</option>
+        <option value="js">JavaScript</option>
+        <option value="node">Node.js</option>
+      </select>
+      <br>
+      
+      <label for="addPhoto">Фото:</label>
+      <input type="file" id="addPhoto">
+      <br>
+      <input type="submit" id="send" value="Сохранить">
     </form>
   </body>
 </html>
