@@ -14,10 +14,13 @@
             <label for="regionSend">Регион: </label>
             <select id="regionSend" name="regionSend">
                 <option value="KRSK">Красноярский край</option>
-                <option value="KHAK">Республика Хакасия</option>
+                <option value="KHAK" selected>Республика Хакасия</option>
                 <option value="NSK">Новосибирская область</option>
                 <option value="KEMER">Кемеровская область</option>
             </select>
+            <br>
+            <label for="">Адрес: </label>
+            <input type="text" name="addressSend" id="addressSend">
             <br>
             <br>
 
@@ -34,24 +37,32 @@
                 <option value="KEMER">Кемеровская область</option>
             </select>
             <br>
+            <label for="">Адрес: </label>
+            <input type="text" name="addressRecip" id="addressRecip">
+            <br>
             <br>
 
             <label>Размеры посылки: </label>
             <br>
             <label for="weight">Вес: </label>
-            <input type="text" id="weight" name="weigth">
+            <input type="text" id="weight" name="weight">
+            <label for="weight"> кг.</label>
             <br>
 
-            <label for="length">Длина</label>
+            <label for="length">Длина: </label>
             <input type="text" id="length" name="length">
+            <label for="length"> см.</label>
             <br>
 
-            <label for="width">Ширина</label>
+            <label for="width">Ширина: </label>
             <input type="text" id="width" name="width">
+            <label for="width"> см.</label>
             <br>
 
-            <label for="height">Высота</label>
+            <label for="height">Высота: </label>
             <input type="text" id="height" name="height">
+            <label for="height"> см.</label>
+            <br>
             <br>
 
             <input type="submit" name="process" value="Process">
