@@ -72,9 +72,7 @@ function checkInfoForm ()
     return $errors;
 }
 
-
-
-if ($_POST['add'] != '') {
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $errors = implode(';<br>', checkInfoForm());
     if ($errors != '') {
         print $errors;
