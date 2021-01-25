@@ -1,0 +1,6 @@
+3	galya.shpack@gmail.com
+2	ivkopilov@yandex.ru
+1	ark@kmiac.ru
+1	marina@kmiac.ru
+1	example@example.com
+1	test@test.com
