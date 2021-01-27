@@ -18,7 +18,7 @@ function checkForm ()
         }
     }
 
-    return implode($errors);
+    return $errors;
 }
 
 function calculate () 
@@ -41,8 +41,9 @@ function calculate ()
     return "{$_POST['operand1']}{$_POST['operation']}{$_POST['operand2']} = $result";
 }
 
-if (checkForm() != "") {
-    print(checkForm());
+$errors = checkForm();
+if ($errors) {
+    print(implode(';<br>', $errors));
 } else {
     print(calculate());
 }
