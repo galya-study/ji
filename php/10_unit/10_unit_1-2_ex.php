@@ -1,6 +1,6 @@
 <?php
 
-$countVisit = 0;
+$countVisit = 1;
 
 if (isset($_COOKIE['countVisit'])) {
     $countVisit = $_COOKIE['countVisit'] + 1;
