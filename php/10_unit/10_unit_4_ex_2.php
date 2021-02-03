@@ -2,7 +2,7 @@
 
 function createFirstForm ()
 {
-    $firstForm = '<form method="GET" action="10_unit_4_ex_1.php" enctype="multipart/form-data">
+    $firstForm = '<form method="POST" action="10_unit_4_ex_1.php" enctype="multipart/form-data">
             <label>Товар 1 - </label>
             <label>Количество '
             . $_POST['product1'] . '</label>
@@ -27,6 +27,7 @@ function createFirstForm ()
             <label>Количество '
             . $_POST['product6'] . '</label>
             <br>
+            <input type="hidden" id="chekOut" name="chekOut" value="chekOut">
             <input type="submit" id="checkOut" value="Оформить заказ">
         </form>
         <form method="POST" action="10_unit_4_ex_1.php" enctype="multipart/form-data">
@@ -36,11 +37,13 @@ function createFirstForm ()
     return $firstForm;
 }
 
-setcookie('product1', $_POST['product1']);
-setcookie('product2', $_POST['product2']);
-setcookie('product3', $_POST['product3']);
-setcookie('product4', $_POST['product4']);
-setcookie('product5', $_POST['product5']);
-setcookie('product6', $_POST['product6']);
+session_start();
+
+$_SESSION['product1'] = $_POST['product1'];
+$_SESSION['product2'] = $_POST['product2'];
+$_SESSION['product3'] = $_POST['product3'];
+$_SESSION['product4'] = $_POST['product4'];
+$_SESSION['product5'] = $_POST['product5'];
+$_SESSION['product6'] = $_POST['product6'];
 
 print createFirstForm();
